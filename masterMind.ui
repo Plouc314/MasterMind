@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1426</width>
+    <height>1236</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame {
+	border: none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>140</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="title">
+         <property name="font">
+          <font>
+           <pointsize>40</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Master Mind</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="menu">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="2" column="0">
+         <widget class="QFrame" name="frame_3">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>478</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="font">
+                <font>
+                 <pointsize>30</pointsize>
+                 <underline>true</underline>
+                </font>
+               </property>
+               <property name="text">
+                <string>Statistics</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>538</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="0">
+            <widget class="QTableWidget" name="table_global">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="rowCount">
+              <number>1</number>
+             </property>
+             <property name="columnCount">
+              <number>4</number>
+             </property>
+             <row>
+              <property name="text">
+               <string>Global</string>
+              </property>
+             </row>
+             <column>
+              <property name="text">
+               <string>Games played</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Victory</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Difficulty</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Gameplay</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>80</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="0">
+            <widget class="QTableWidget" name="table_career">
+             <property name="rowCount">
+              <number>6</number>
+             </property>
+             <property name="columnCount">
+              <number>6</number>
+             </property>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <row/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0" colspan="2">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QLabel" name="text_color">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Number of colors</string>
+                 </property>
+                 <property name="margin">
+                  <number>15</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="Box_color">
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>4</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>6</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>8</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>10</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QLabel" name="text_cases">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Number of cases</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="Box_cases">
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>4</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>6</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>8</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>10</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>12</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QLabel" name="text_repetition">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Repetition</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="Box_repetition">
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Activate</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Deactivate</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="2" rowspan="2">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QPushButton" name="PlayButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>20</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">padding-left: 50px;
+padding-right: 50px;
+padding-top: 10px;
+padding-bottom: 10px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Play</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>100</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="1">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>1174</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>120</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="option"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1426</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
